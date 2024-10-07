@@ -1,0 +1,10 @@
+import numpy as np
+
+# Define the matrix
+A = np.array([[1, 1], [0, 2]])
+
+# Compute the projection matrix
+projection_matrix = A @ np.linalg.inv(A.T @ A) @ A.T
+
+print("Projection Matrix:")
+print(projection_matrix)
